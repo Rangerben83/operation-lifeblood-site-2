@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Operation Lifeblood – Hemorrhagic Shock FRO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            lifebloodRed: "#8A1C1C",
+            navy: "#111827",
+            grayLight: "#F3F4F6",
+            grayMid: "#6B7280",
+            grayDark: "#1F2937",
+            white: "#FFFFFF"
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-white text-grayDark antialiased">
+
+<!-- HEADER -->
+<header class="bg-white border-b border-grayLight">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+
+    <div class="flex items-center gap-3">
+      <img src="./OPERATION_LIFEBLOOD_LOGO_1.png" class="h-16 w-auto" />
+      <div>
+        <div class="text-sm uppercase tracking-[0.18em] text-lifebloodRed">Operation Lifeblood</div>
+        <div class="text-xs text-grayMid">Hemorrhagic Shock • Military & Emergency Medicine</div>
+      </div>
+    </div>
+
+    <nav class="hidden md:flex gap-6 text-xs font-medium text-grayDark">
+      <a href="#mission" class="hover:text-lifebloodRed">Mission</a>
+      <a href="#problem" class="hover:text-lifebloodRed">The Problem</a>
+      <a href="#how" class="hover:text-lifebloodRed">How We Work</a>
+      <a href="#programs" class="hover:text-lifebloodRed">Core Programs</a>
+      <a href="#involved" class="hover:text-lifebloodRed">Get Involved</a>
+    </nav>
+
+  </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="relative bg-white text-grayDark">
+  <div class="relative max-w-4xl mx-auto px-4 py-20 md:py-28 flex flex-col items-center text-center">
+
+    <img src="./OPERATION_LIFEBLOOD_LOGO_1.png" class="h-40 w-auto md:h-48 mb-6" />
+
+    <p class="text-xs uppercase tracking-[0.25em] text-lifebloodRed mb-4">
+      Focused Research Organization
+    </p>
+
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6 text-navy">
+      Eliminating Preventable Deaths from<br />
+      <span class="text-lifebloodRed">Hemorrhagic Shock</span>
+    </h1>
+
+    <p class="text-base md:text-xl text-grayMid max-w-2xl mb-8">
+      Operation Lifeblood unites military medicine, first responders, and trauma science 
+      to create the world’s first focused research organization dedicated specifically to hemorrhagic shock.
+    </p>
+
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="#involved"
+        class="inline-flex items-center justify-center px-8 py-4 text-sm font-semibold rounded-md bg-lifebloodRed text-white hover:bg-lifebloodRed/90">
+        Get the Mission Brief
+      </a>
+
+      <a href="#programs"
+        class="inline-flex items-center justify-center px-8 py-4 text-sm font-semibold rounded-md border border-grayDark/30 text-grayDark hover:border-lifebloodRed hover:text-lifebloodRed">
+        Explore Core Programs
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- SECTION STUBS -->
+
+<section id="mission" class="bg-grayLight py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-2xl font-bold text-navy mb-4">Mission</h2>
+    <p class="text-grayDark">
+      To eliminate preventable deaths from trauma and hemorrhagic shock by advancing innovative research,
+      developing field-ready treatments, and translating military medical breakthroughs into lifesaving
+      solutions for warfighters, first responders, and trauma patients worldwide.
+    </p>
+  </div>
+</section>
+
+<section id="problem" class="bg-white py-16 border-t border-b border-grayLight">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-2xl font-bold text-navy mb-4">The Problem</h2>
+    <p class="text-grayDark">
+      Hemorrhagic shock remains a leading cause of preventable death after trauma, both in combat and civilian emergencies.
+    </p>
+  </div>
+</section>
+
+<section id="how" class="bg-grayLight py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-2xl font-bold text-navy mb-4">How We Work</h2>
+    <p class="text-grayDark">
+      Operation Lifeblood is structured as a time-bound, milestone-driven Functional Research Organization (FRO).
+    </p>
+  </div>
+</section>
+
+<section id="programs" class="bg-white py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-2xl font-bold text-navy mb-6">Core Programs</h2>
+    <p class="text-grayDark">We operate five mission-aligned research and translation efforts.</p>
+  </div>
+</section>
+
+<section id="involved" class="bg-grayLight py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-2xl font-bold text-navy mb-4">Get Involved</h2>
+    <p class="text-grayDark">
+      We welcome partnerships with defense agencies, clinicians, funders, trauma centers, and medical innovators.
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-white border-t border-grayLight">
+  <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-3">
+    <div class="text-sm text-grayMid">
+      © <span id="year"></span> Operation Lifeblood • A Functional Research Organization
+    </div>
+    <div class="text-xs uppercase tracking-[0.15em] text-lifebloodRed">
+      “No soldier or civilian dies from survivable shock.”
+    </div>
+  </div>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</footer>
+
+</body>
+</html>
