@@ -2,441 +2,430 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Operation Lifeblood – Hemorrhagic Shock FRO</title>
+  <title>Operation Lifeblood – Ending Preventable Deaths from Hemorrhagic Shock</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem 3rem;
-      line-height: 1.6;
-      color: #111827;
-      background-color: #f9fafb;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    header img {
-      max-width: 220px;
-      height: auto;
-      margin-bottom: 0.75rem;
-    }
-    header h1 {
-      font-size: 2rem;
-      margin: 0.25rem 0 0.5rem;
-    }
-    header p {
-      margin: 0.15rem 0;
-      color: #4b5563;
-    }
-    nav {
-      margin-top: 1rem;
-      font-size: 0.9rem;
-    }
-    nav a {
-      color: #b91c1c;
-      text-decoration: none;
-      margin: 0 0.25rem;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    h1, h2, h3, h4 {
-      color: #111827;
-      margin-top: 1.75rem;
-      margin-bottom: 0.5rem;
-    }
-    h1 {
-      font-size: 2rem;
-    }
-    h2 {
-      font-size: 1.5rem;
-      border-top: 1px solid #e5e7eb;
-      padding-top: 1.25rem;
-    }
-    h3 {
-      font-size: 1.15rem;
-      color: #1f2937;
-    }
-    h4 {
-      font-size: 1rem;
-      color: #374151;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-    strong {
-      font-weight: 600;
-    }
-    em {
-      font-style: italic;
-    }
-    p {
-      margin: 0.4rem 0 0.6rem;
-    }
-    ul, ol {
-      padding-left: 1.4rem;
-      margin: 0.3rem 0 0.8rem;
-    }
-    blockquote {
-      border-left: 4px solid #b91c1c;
-      padding-left: 0.75rem;
-      margin: 0.5rem 0 1rem;
-      color: #4b5563;
-      font-style: italic;
-      background-color: #fef2f2;
-    }
-    .tagline {
-      font-size: 0.95rem;
-      color: #6b7280;
-    }
-    .badge {
-      display: inline-block;
-      padding: 0.25rem 0.6rem;
-      border-radius: 999px;
-      background-color: #fee2e2;
-      color: #b91c1c;
-      font-size: 0.8rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 0.75rem;
-    }
-    .cta-row {
-      margin: 1rem 0 1.25rem;
-    }
-    .cta-row a {
-      display: inline-block;
-      margin-right: 0.5rem;
-      padding: 0.4rem 0.8rem;
-      border-radius: 999px;
-      border: 1px solid #b91c1c;
-      color: #b91c1c;
-      text-decoration: none;
-      font-size: 0.85rem;
-    }
-    .cta-row a:hover {
-      background-color: #b91c1c;
-      color: #f9fafb;
-    }
-    .values-list li {
-      margin-bottom: 0.15rem;
-    }
-    footer {
-      margin-top: 3rem;
-      padding-top: 1rem;
-      border-top: 1px solid #e5e7eb;
-      font-size: 0.85rem;
-      color: #6b7280;
-    }
-    footer .social {
-      margin-top: 0.4rem;
-    }
-    footer .social span {
-      font-weight: 600;
-      color: #4b5563;
-    }
-    footer .social a {
-      margin-left: 0.25rem;
-      color: #b91c1c;
-      text-decoration: none;
-    }
-    footer .social a:hover {
-      text-decoration: underline;
+    /* Optional: slightly tighter tracking for all-caps headings */
+    .tracking-wide-caps {
+      letter-spacing: 0.18em;
     }
   </style>
 </head>
-<body>
-  <header>
-    <!-- Keep your existing logo file name here -->
-    <img src="OPERATION_LIFEBLOOD_LOGO_1.png" alt="Operation Lifeblood logo" />
-
-    <div class="badge">Focused Research Organization</div>
-
-    <h1>Operation Lifeblood</h1>
-    <p class="tagline">Hemorrhagic Shock • Military &amp; Emergency Medicine</p>
-
-    <nav>
-      <a href="#mission">Mission</a> ·
-      <a href="#the-problem">The Problem</a> ·
-      <a href="#how-we-work">How We Work</a> ·
-      <a href="#core-programs">Core Programs</a> ·
-      <a href="#get-involved">Get Involved</a>
-    </nav>
+<body class="bg-slate-950 text-slate-50 antialiased">
+  <!-- Header -->
+  <header class="sticky top-0 z-20 border-b border-slate-800 bg-slate-950/90 backdrop-blur">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+      <div class="flex items-center gap-3">
+        <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-red-600 to-red-900 text-xs font-bold tracking-[0.15em] text-red-50">
+          OL
+        </div>
+        <div>
+          <div class="text-xs font-semibold uppercase tracking-[0.18em]">
+            Operation Lifeblood
+          </div>
+          <div class="text-[0.7rem] text-slate-400">
+            Hemorrhagic Shock • Military &amp; Emergency Medicine
+          </div>
+        </div>
+      </div>
+      <nav class="hidden gap-3 text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-slate-400 md:flex">
+        <a href="#mission" class="rounded-full border border-transparent px-3 py-1 hover:border-slate-600 hover:text-slate-50">Mission</a>
+        <a href="#problem" class="rounded-full border border-transparent px-3 py-1 hover:border-slate-600 hover:text-slate-50">The Problem</a>
+        <a href="#how-we-work" class="rounded-full border border-transparent px-3 py-1 hover:border-slate-600 hover:text-slate-50">How We Work</a>
+        <a href="#core-programs" class="rounded-full border border-transparent px-3 py-1 hover:border-slate-600 hover:text-slate-50">Core Programs</a>
+        <a href="#get-involved" class="rounded-full border border-red-500/60 bg-red-600/10 px-3 py-1 text-red-200 hover:bg-red-600/20">Get Involved</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h1>Eliminating Preventable Deaths from Hemorrhagic Shock</h1>
-      <p>
-        OPERATION LIFEBLOOD unites military medicine, first responders, trauma surgeons, and scientists
-        in a time-bound, milestone-driven research organization focused on a single mission:
-        turning hemorrhagic shock from a leading cause of preventable death into a survivable
-        condition for warfighters and civilians.
-      </p>
+  <main class="pb-16">
+    <!-- HERO: text left, logo right -->
+    <section class="bg-gradient-to-b from-slate-900 to-slate-950">
+      <div class="mx-auto grid max-w-6xl gap-10 px-4 py-12 md:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] md:items-center">
+        <!-- Left: main hero content -->
+        <div>
+          <p class="mb-2 text-xs font-semibold uppercase tracking-[0.2em] text-red-300">
+            Focused Research Organization
+          </p>
+          <h1 class="text-3xl font-extrabold uppercase tracking-[0.2em] text-slate-50 sm:text-4xl">
+            Ending Preventable Deaths<br />
+            From Hemorrhagic Shock
+          </h1>
+          <p class="mt-4 max-w-xl text-sm text-slate-300">
+            Operation Lifeblood unites military physicians, combat veterans, first responders,
+            scientists, and engineers in a time-bound, milestone-driven research organization.
+            Our mission is simple and urgent: turn hemorrhagic shock from a leading cause of
+            preventable death into a survivable condition on the battlefield and beyond.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#problem" class="inline-flex items-center rounded-full bg-gradient-to-r from-red-600 to-red-800 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-red-50 shadow-lg shadow-red-900/50 hover:from-red-500 hover:to-red-700">
+              Understand the Problem
+            </a>
+            <a href="#core-programs" class="inline-flex items-center rounded-full border border-slate-600 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-slate-100 hover:bg-slate-900">
+              Explore Core Programs
+            </a>
+          </div>
+          <p class="mt-4 inline-flex items-center rounded-full border border-slate-700 px-3 py-1 text-[0.7rem] uppercase tracking-[0.18em] text-slate-300">
+            Service to Those Who Serve • Scientific Excellence • Operational Realism
+          </p>
+        </div>
 
-      <div class="cta-row">
-        <a href="#get-involved">Get the Mission Brief</a>
-        <a href="#core-programs">Explore Core Programs</a>
+        <!-- Right: logo card -->
+        <div class="flex justify-center">
+          <div class="relative rounded-2xl border border-slate-700/70 bg-slate-900/80 p-4 shadow-2xl shadow-black/60">
+            <!-- Glow background -->
+            <div class="pointer-events-none absolute inset-0 -z-10 rounded-2xl bg-gradient-to-br from-red-500/30 via-transparent to-red-900/40 blur-3xl"></div>
+            <!-- Replace src with your existing logo asset name -->
+            <img
+              src="OPERATION_LIFEBLOOD_LOGO_1.png"
+              alt="Operation Lifeblood logo"
+              class="h-40 w-auto object-contain md:h-48"
+            />
+            <p class="mt-3 text-center text-[0.7rem] uppercase tracking-[0.18em] text-slate-400">
+              OPERATION LIFEBLOOD
+            </p>
+          </div>
+        </div>
       </div>
-
-      <p><strong>Service to Those Who Serve • Scientific Excellence • Operational Realism</strong></p>
     </section>
 
-    <section id="mission">
-      <h2>Mission &amp; Vision</h2>
+    <!-- PROBLEM: urgency + what is shock + why leading cause -->
+    <section id="problem" class="bg-slate-950">
+      <div class="mx-auto max-w-6xl px-4 py-12">
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-red-300">
+          The Urgency of Hemorrhagic Shock
+        </p>
 
-      <h3>Mission</h3>
-      <p><strong>Service to those who serve — and everyone they protect.</strong></p>
-      <p>
-        Our mission is to eliminate preventable deaths from trauma and hemorrhagic shock by advancing
-        innovative research, developing field-ready treatments, and translating military medical
-        breakthroughs into lifesaving solutions for warfighters, first responders, and trauma
-        patients worldwide.
-      </p>
-      <p>
-        We focus on the full continuum of care: from point of injury, through evacuation and
-        resuscitation, to definitive treatment and recovery.
-      </p>
+        <div class="mt-4 rounded-2xl border border-red-500/40 bg-gradient-to-br from-red-900/50 to-slate-950 p-5 shadow-xl shadow-red-900/40">
+          <p class="text-base italic text-slate-100">
+            “Hemorrhage remains the leading cause of preventable death on the battlefield.”
+          </p>
+          <p class="mt-2 text-sm font-medium text-red-200">
+            — COL Brian Eastridge, MD, Joint Trauma System
+          </p>
+        </div>
 
-      <h3>Vision</h3>
-      <p><strong>A world where survivable shock is no longer fatal.</strong></p>
-      <p>
-        We envision a world where no soldier or civilian dies from survivable shock — where science,
-        technology, training, and systems of care work together to deliver rapid, effective, and
-        deployable solutions in any environment.
-      </p>
+        <div class="mt-8 grid gap-6 md:grid-cols-2">
+          <div class="rounded-2xl border border-slate-800 bg-slate-900/80 p-5">
+            <h2 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">
+              What Is Hemorrhagic Shock?
+            </h2>
+            <p class="mt-3 text-sm text-slate-300">
+              Hemorrhagic shock happens when a person loses so much blood that the heart can’t pump
+              enough to keep the brain and vital organs alive. Without rapid intervention—stopping
+              the bleeding and restoring circulation—the body shuts down in minutes.
+            </p>
+          </div>
 
-      <h3>Core Values</h3>
-      <ul class="values-list">
-        <li>Service to Those Who Serve</li>
-        <li>Scientific Excellence</li>
-        <li>Operational Realism</li>
-        <li>Collaboration across Military &amp; Civilian Systems</li>
-        <li>Integrity &amp; Transparency</li>
-        <li>Innovation for Impact, not just publications</li>
-        <li>Global Relevance &amp; Knowledge Sharing</li>
-      </ul>
+          <div class="rounded-2xl border border-slate-800 bg-slate-900/80 p-5">
+            <h2 class="text-sm font-semibold uppercase tracking-[0.18em] text-slate-200">
+              Why It Is the Leading Cause of Preventable Battlefield Death
+            </h2>
+            <p class="mt-3 text-sm text-slate-300">
+              On today’s battlefield, most deaths occur before the casualty reaches a surgeon. When
+              blood loss is severe:
+            </p>
+            <ul class="mt-3 space-y-1 text-sm text-slate-200">
+              <li>• Bleeding can be internal and invisible</li>
+              <li>• Clots break apart during movement or stress</li>
+              <li>• Even transfusion may only temporarily stabilize the patient</li>
+              <li>• Shock can return suddenly during MEDEVAC or early surgery</li>
+            </ul>
+            <p class="mt-3 border-l-2 border-red-500 pl-3 text-sm font-medium text-red-200">
+              Because of these challenges, over 90% of potentially survivable combat deaths are
+              caused by uncontrolled hemorrhage.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="the-problem">
-      <h2>The Problem</h2>
+    <!-- HISTORY + WHY TRADITIONAL RESEARCH FAILS -->
+    <section class="bg-gradient-to-b from-slate-950 to-slate-900">
+      <div class="mx-auto max-w-6xl px-4 py-12">
+        <div class="grid gap-8 md:grid-cols-2">
+          <!-- History -->
+          <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-6">
+            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-red-300">
+              A Problem Recognized for Generations
+            </p>
+            <h2 class="mt-3 text-sm font-semibold uppercase tracking-[0.16em] text-slate-100">
+              150+ YEARS OF KNOWING THE PROBLEM. STILL NO DEFINITIVE SOLUTION.
+            </h2>
+            <p class="mt-3 text-sm text-slate-300">
+              Battlefield surgeons have known for over 150 years—from the Civil War through Iraq
+              and Afghanistan—that uncontrolled bleeding kills more Soldiers than any other
+              battlefield injury.
+            </p>
+            <p class="mt-3 text-sm text-slate-300">
+              Despite major advances in tourniquets, blood products, and evacuation,
+              hemorrhagic shock remains an unsolved problem.
+            </p>
+          </div>
 
-      <h3>The Urgency of Hemorrhagic Shock</h3>
-      <blockquote>
-        “Hemorrhage remains the leading cause of preventable death on the battlefield.”<br />
-        — <strong>COL Brian Eastridge, MD, Joint Trauma System</strong>
-      </blockquote>
-
-      <p>
-        <strong>Hemorrhagic shock</strong> happens when a person loses so much blood that the heart
-        can’t pump enough to keep the brain and vital organs alive. Without rapid intervention—
-        stopping the bleeding and restoring circulation—the body begins to shut down in minutes.
-      </p>
-
-      <h3>Why It Is the Leading Cause of Preventable Battlefield Death</h3>
-      <p>On today’s battlefield, most deaths occur before the casualty reaches a surgeon. When blood loss is severe:</p>
-      <ul>
-        <li>Bleeding can be internal and invisible.</li>
-        <li>Clots break apart during movement, flight, or stress.</li>
-        <li>Transfusion may only temporarily stabilize the patient.</li>
-        <li>Shock can return suddenly during MEDEVAC or early surgery.</li>
-      </ul>
-      <p>
-        Because of these challenges, the vast majority of potentially survivable combat deaths
-        are caused by uncontrolled hemorrhage.
-      </p>
-
-      <h3>A Problem Recognized for Generations</h3>
-      <p>
-        From the American Civil War to Iraq and Afghanistan, battlefield surgeons have known the same truth:
-        uncontrolled bleeding kills more Soldiers than any other battlefield injury.
-      </p>
-      <p>
-        Despite major advances in tourniquets, blood products, damage-control surgery, and rapid evacuation,
-        hemorrhagic shock remains an unsolved problem — on the battlefield, in the ambulance, and in trauma
-        centers around the world.
-      </p>
-
-      <h3>Why Traditional Research Hasn’t Solved It</h3>
-      <p>Traditional clinical research is not designed for the speed, chaos, and ethical constraints of battlefield trauma:</p>
-      <ul>
-        <li>It cannot ethically expose humans to life-threatening shock.</li>
-        <li>It cannot fully simulate battlefield or austere conditions.</li>
-        <li>It requires more standardized data than trauma patients can safely provide.</li>
-        <li>It moves in years, while shock evolves in minutes.</li>
-      </ul>
-      <p>
-        The result: modern medicine still lacks a <strong>validated, real-time model</strong> to predict,
-        diagnose, and treat hemorrhagic shock in its earliest — and most critical — moments.
-      </p>
+          <!-- Why traditional research hasn't solved it -->
+          <div class="rounded-2xl border border-slate-800 bg-slate-900/70 p-6">
+            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-red-300">
+              Why Traditional Research Hasn’t Solved It
+            </p>
+            <h2 class="mt-3 text-sm font-semibold uppercase tracking-[0.16em] text-slate-100">
+              SHOCK EVOLVES IN MINUTES. MOST RESEARCH MOVES IN YEARS.
+            </h2>
+            <p class="mt-3 text-sm text-slate-300">
+              Conventional medical research relies on slow, linear clinical trials that:
+            </p>
+            <ul class="mt-3 space-y-1 text-sm text-slate-200">
+              <li>• Can’t simulate the chaos of battlefield conditions</li>
+              <li>• Cannot ethically expose humans to life-threatening shock</li>
+              <li>• Require far more data than trauma patients can safely provide</li>
+              <li>• Take years to produce results, while shock evolves in minutes</li>
+            </ul>
+            <p class="mt-3 border-l-2 border-red-500 pl-3 text-sm font-medium text-red-200">
+              As a result, modern medicine still lacks a validated, real-time model to predict,
+              diagnose, and treat hemorrhagic shock in its earliest—and most critical—moments.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="how-we-work">
-      <h2>How We Work</h2>
-      <h3>A Functional Research Organization built for impact, not inertia.</h3>
+    <!-- HOW OPERATION LIFEBLOOD IS CHANGING SHOCK CARE -->
+    <section id="how-we-work" class="bg-slate-950">
+      <div class="mx-auto max-w-6xl px-4 py-12">
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-red-300">
+          How Operation Lifeblood Is Changing the Future of Shock Care
+        </p>
+        <h2 class="mt-3 text-sm font-semibold uppercase tracking-[0.18em] text-slate-100">
+          THREE LINES OF INNOVATION. ONE SIMPLE, URGENT MISSION.
+        </h2>
+        <p class="mt-3 max-w-3xl text-sm text-slate-300">
+          Operation Lifeblood brings together military physicians, combat veterans, scientists, and
+          engineers to break through the limits of traditional research and deliver lifesaving
+          breakthroughs.
+        </p>
 
-      <p>
-        Operation Lifeblood is structured as a <strong>Functional Research Organization (FRO)</strong>:
-        a dedicated, non-profit entity with a single, ambitious, and time-bounded mission.
-        We assemble a full-time technical and clinical team, align them around clear milestones,
-        and measure progress in real-world outcomes rather than publications alone.
-      </p>
+        <div class="mt-8 grid gap-6 md:grid-cols-3">
+          <div class="flex flex-col rounded-2xl border border-slate-800 bg-slate-900/80 p-5">
+            <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-red-200">
+              1. Cardiac Digital Twin for Hemorrhagic Shock
+            </h3>
+            <p class="mt-3 text-sm text-slate-300">
+              A first-of-its-kind, high-fidelity computational model of how the heart and
+              circulatory system respond to blood loss—built using scientific machine learning, DoD
+              trauma data, and advanced simulation.
+            </p>
+            <p class="mt-3 text-sm text-slate-300">
+              This model will allow medics and clinicians to predict shock before it becomes fatal,
+              test treatments safely <em>in silico</em>, and personalize resuscitation in real time.
+            </p>
+          </div>
 
-      <h4>01 – Time-Bound Mission</h4>
-      <p>
-        A 5–7 year horizon to move hemorrhagic shock from unsolved challenge to a domain with deployable tools,
-        validated models, and new standards of care.
-      </p>
+          <div class="flex flex-col rounded-2xl border border-slate-800 bg-slate-900/80 p-5">
+            <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-red-200">
+              2. Faster Translation From Battlefield to Hospital
+            </h3>
+            <p class="mt-3 text-sm text-slate-300">
+              Insights from digital twins are converted into deployable protocols, tools, and
+              training for medics, first responders, and trauma surgeons—closing the gap between
+              research and real-world lifesaving care.
+            </p>
+          </div>
 
-      <h4>02 – Integrated Team</h4>
-      <p>
-        Cardiac surgeons, trauma physicians, combat medics, data scientists, and engineers working together —
-        without institutional walls — toward one mission.
-      </p>
-
-      <h4>03 – Milestone-Driven</h4>
-      <p>
-        Clear technical, translational, and clinical milestones: validated models, decision-support tools,
-        new protocols, and demonstration projects across military and civilian settings.
-      </p>
-
-      <h4>04 – Public Good Focus</h4>
-      <p>
-        Data, models, and guidelines developed as shared infrastructure for militaries, EMS systems,
-        trauma centers, and researchers worldwide.
-      </p>
+          <div class="flex flex-col rounded-2xl border border-slate-800 bg-slate-900/80 p-5">
+            <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-red-200">
+              3. A New Era of Trauma Innovation
+            </h3>
+            <p class="mt-3 text-sm text-slate-300">
+              Through competitive grants, partnerships, and open collaboration, Operation Lifeblood
+              accelerates promising ideas that would otherwise never reach the warfighter or the
+              civilian patient.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="core-programs">
-      <h2>Core Programs</h2>
-      <h3>Five lines of effort, one mission.</h3>
+    <!-- WHO WE SERVE with image placeholders -->
+    <section class="bg-gradient-to-b from-slate-900 to-slate-950">
+      <div class="mx-auto max-w-6xl px-4 py-12">
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-red-300">
+          Who We Serve
+        </p>
+        <h2 class="mt-3 text-sm font-semibold uppercase tracking-[0.18em] text-slate-100">
+          MILITARY MEDICINE • FIRST RESPONDERS • TRAUMA MEDICINE
+        </h2>
 
-      <h4>1. Cardiac Digital Twin for Hemorrhagic Shock</h4>
-      <p>
-        A first-of-its-kind, high-fidelity computational model of how the heart and circulatory system respond
-        to blood loss — built using scientific machine learning, DoD trauma data, and advanced simulation.
-      </p>
-      <p>
-        This cardiac digital twin will enable medics and clinicians to:
-      </p>
-      <ul>
-        <li>Predict shock <strong>before</strong> it becomes fatal.</li>
-        <li>Test treatments safely <em>in silico</em>.</li>
-        <li>Personalize resuscitation in real time.</li>
-      </ul>
+        <div class="mt-8 grid gap-6 md:grid-cols-3">
+          <!-- Military Medicine -->
+          <article class="flex flex-col overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/80">
+            <!-- Replace src with your own image -->
+            <div class="h-32 bg-slate-800">
+              <img src="military-medicine.jpg" alt="Military medicine" class="h-full w-full object-cover" />
+            </div>
+            <div class="p-5">
+              <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-red-200">
+                Military Medicine
+              </h3>
+              <p class="mt-3 text-sm text-slate-300">
+                Supporting warfighters and combat casualty care across the full continuum of
+                operations—providing tools, models, and protocols that work in the most austere,
+                resource-limited, and high-threat environments.
+              </p>
+            </div>
+          </article>
 
-      <h4>2. Translational Medicine for First Responders &amp; Civilian Trauma Care</h4>
-      <p>
-        Adapting battlefield-proven protocols, diagnostics, and resuscitation strategies to EMS,
-        emergency departments, and trauma networks around the world — co-designed with frontline
-        clinicians to fit real-world staffing, equipment, and training constraints.
-      </p>
+          <!-- First Responders -->
+          <article class="flex flex-col overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/80">
+            <div class="h-32 bg-slate-800">
+              <img src="first-responders.jpg" alt="First responders" class="h-full w-full object-cover" />
+            </div>
+            <div class="p-5">
+              <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-red-200">
+                First Responders
+              </h3>
+              <p class="mt-3 text-sm text-slate-300">
+                Adapting military-grade shock-care innovations for EMS, fire-rescue, and disaster
+                response teams, with practical, rapid, and effective frameworks for recognizing and
+                treating shock.
+              </p>
+            </div>
+          </article>
 
-      <h4>3. Trauma Innovation Challenge Grants</h4>
-      <p>
-        Competitive grants that identify, de-risk, and accelerate bold ideas in shock reversal,
-        resuscitation strategies, field diagnostics, and novel therapeutics. Successful concepts
-        are integrated into the broader Lifeblood mission where they can scale and be evaluated.
-      </p>
-
-      <h4>4. Hemorrhagic Shock Data &amp; Collaboration Network</h4>
-      <p>
-        A secure, ethically governed data commons connecting military, EMS, trauma centers, and
-        research labs focused on hemorrhagic shock — enabling shared models, shared evidence,
-        and shared learning, while respecting operational security and privacy.
-      </p>
-
-      <h4>5. Advocacy &amp; Policy Engagement</h4>
-      <p>
-        Elevating hemorrhagic shock as a sustained funding and policy priority across defense,
-        public health, and emergency-care systems, and aligning resources with the true scale of
-        the problem.
-      </p>
+          <!-- Trauma Medicine -->
+          <article class="flex flex-col overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/80">
+            <div class="h-32 bg-slate-800">
+              <img src="trauma-medicine.jpg" alt="Trauma medicine" class="h-full w-full object-cover" />
+            </div>
+            <div class="p-5">
+              <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-red-200">
+                Trauma Medicine
+              </h3>
+              <p class="mt-3 text-sm text-slate-300">
+                Partnering with trauma centers and critical care teams to incorporate digital twins,
+                data networks, and new protocols into daily practice—bridging the gap from research
+                to bedside.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>Who We Serve</h2>
-      <h3>Military Medicine • First Responders • Trauma Medicine</h3>
-
-      <h4>Military Medicine</h4>
-      <p>
-        We support warfighters and combat casualty care across the full continuum of operations —
-        providing tools, models, and protocols that work in the most austere, resource-limited,
-        and high-threat environments.
-      </p>
-
-      <h4>First Responders</h4>
-      <p>
-        We adapt military-grade shock-care innovations for EMS professionals, fire-rescue teams,
-        and disaster response units, ensuring they have practical, rapid, and effective frameworks
-        for recognizing and treating shock.
-      </p>
-
-      <h4>Trauma Medicine</h4>
-      <p>
-        We partner with trauma centers, critical care teams, and academic researchers to incorporate
-        digital twins, data networks, and new protocols into daily practice — bridging the gap
-        from research to bedside.
-      </p>
+    <!-- MISSION (simple & urgent) -->
+    <section id="mission" class="bg-slate-950">
+      <div class="mx-auto max-w-4xl px-4 py-12 text-center">
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-red-300">
+          Our Mission Is Simple and Urgent
+        </p>
+        <p class="mt-4 border-l-2 border-red-500/70 bg-slate-900/60 px-4 py-4 text-sm font-medium text-slate-100 md:text-base">
+          To end preventable deaths from hemorrhagic shock—on the battlefield, in the ambulance,
+          and in every trauma center in America.
+        </p>
+      </div>
     </section>
 
-    <section id="get-involved">
-      <h2>Get Involved</h2>
-      <h3>Join the mission to change the standard of care for shock.</h3>
+    <!-- GET INVOLVED -->
+    <section id="get-involved" class="bg-slate-950">
+      <div class="mx-auto max-w-6xl px-4 py-12">
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-red-300">
+          Get Involved
+        </p>
+        <h2 class="mt-3 text-sm font-semibold uppercase tracking-[0.18em] text-slate-100">
+          JOIN THE MISSION TO CHANGE THE STANDARD OF SHOCK CARE
+        </h2>
+        <p class="mt-3 max-w-3xl text-sm text-slate-300">
+          We’re building a coalition of military and civilian partners, funders, and frontline
+          practitioners. If you represent a defense organization, foundation, trauma center, EMS
+          system, or research group, there is a way to plug into the Lifeblood mission.
+        </p>
 
-      <p>
-        We’re building a coalition of military and civilian partners, funders, and frontline
-        practitioners. If you represent a defense organization, foundation, trauma center,
-        EMS system, or research group, there is a way to plug into the Lifeblood mission.
-      </p>
+        <div class="mt-8 grid gap-6 md:grid-cols-2">
+          <div class="rounded-2xl border border-slate-800 bg-slate-900/80 p-5">
+            <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-red-200">
+              Partners &amp; Funders
+            </h3>
+            <ul class="mt-3 space-y-1 text-sm text-slate-300">
+              <li>• Defense and health agencies</li>
+              <li>• Foundations and philanthropic organizations</li>
+              <li>• Health systems and trauma networks</li>
+              <li>• Industry partners in medtech and data systems</li>
+            </ul>
+            <p class="mt-3 text-sm text-slate-200">
+              <span class="font-semibold">Contact the Lifeblood Team:</span><br />
+              <a href="mailto:info@operationlifeblood.org" class="text-red-300 hover:text-red-200">
+                info@operationlifeblood.org
+              </a>
+            </p>
+          </div>
 
-      <h4>Partners &amp; Funders</h4>
-      <p>Support a core program, co-design a demonstration project, or help sustain the full FRO lifecycle:</p>
-      <ul>
-        <li>Defense and health agencies</li>
-        <li>Foundations and philanthropic organizations</li>
-        <li>Health systems and trauma networks</li>
-        <li>Industry partners in medtech and data systems</li>
-      </ul>
-      <p><strong>Contact the Lifeblood Team</strong><br />
-        <a href="mailto:info@operationlifeblood.org">info@operationlifeblood.org</a>
-      </p>
-
-      <h4>Clinicians, Medics &amp; Researchers</h4>
-      <p>
-        Help ensure our work is grounded in reality and aligned with the most pressing needs
-        in the field:
-      </p>
-      <ul>
-        <li>Military and civilian trauma clinicians</li>
-        <li>Combat medics, corpsmen, EMS professionals</li>
-        <li>Scientists and engineers in shock, modeling, and digital twins</li>
-        <li>Data stewards and informatics teams</li>
-      </ul>
-      <p><strong>Express Interest in Collaborating</strong><br />
-        <a href="mailto:info@operationlifeblood.org">info@operationlifeblood.org</a>
-      </p>
+          <div class="rounded-2xl border border-slate-800 bg-slate-900/80 p-5">
+            <h3 class="text-xs font-semibold uppercase tracking-[0.18em] text-red-200">
+              Clinicians, Medics &amp; Researchers
+            </h3>
+            <ul class="mt-3 space-y-1 text-sm text-slate-300">
+              <li>• Military and civilian trauma clinicians</li>
+              <li>• Combat medics, corpsmen, EMS professionals</li>
+              <li>• Scientists and engineers in shock, modeling, and digital twins</li>
+              <li>• Data stewards and informatics teams</li>
+            </ul>
+            <p class="mt-3 text-sm text-slate-200">
+              <span class="font-semibold">Express interest in collaborating:</span><br />
+              <a href="mailto:info@operationlifeblood.org?subject=Collaboration%20Interest" class="text-red-300 hover:text-red-200">
+                info@operationlifeblood.org
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>© Operation Lifeblood • A Functional Research Organization</p>
-    <p>
-      Operation Lifeblood is a registered 501(c)(3) tax-exempt organization and is registered
-      as a charitable organization in the State of Maryland.
-    </p>
-    <div class="social">
-      <span>Follow us:</span>
-      <a href="#">LinkedIn</a> ·
-      <a href="#">X</a> ·
-      <a href="#">YouTube</a> ·
-      <a href="#">Instagram</a>
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-800 bg-slate-950">
+    <div class="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-8 md:flex-row md:items-start md:justify-between">
+      <div class="max-w-md">
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-400">
+          Operation Lifeblood
+        </p>
+        <p class="mt-2 text-sm text-slate-300">
+          A Functional Research Organization dedicated to ensuring that no soldier or civilian dies
+          from survivable shock.
+        </p>
+        <p class="mt-3 text-xs text-slate-400">
+          Operation Lifeblood is a registered 501(c)(3) tax-exempt organization and is registered as
+          a charitable organization in the State of Maryland.
+        </p>
+      </div>
+
+      <div class="space-y-3 text-xs text-slate-400">
+        <div>
+          <p class="font-semibold uppercase tracking-[0.16em] text-slate-300">
+            Follow Us
+          </p>
+          <div class="mt-2 flex flex-wrap gap-2">
+            <!-- Replace # with your real profile URLs -->
+            <a href="#" class="flex h-7 w-7 items-center justify-center rounded-full border border-slate-600 text-[0.7rem] text-slate-100 hover:border-red-400 hover:text-red-200" aria-label="LinkedIn">
+              in
+            </a>
+            <a href="#" class="flex h-7 w-7 items-center justify-center rounded-full border border-slate-600 text-[0.7rem] text-slate-100 hover:border-red-400 hover:text-red-200" aria-label="X (Twitter)">
+              X
+            </a>
+            <a href="#" class="flex h-7 w-7 items-center justify-center rounded-full border border-slate-600 text-[0.7rem] text-slate-100 hover:border-red-400 hover:text-red-200" aria-label="YouTube">
+              ▶
+            </a>
+            <a href="#" class="flex h-7 w-7 items-center justify-center rounded-full border border-slate-600 text-[0.7rem] text-slate-100 hover:border-red-400 hover:text-red-200" aria-label="Instagram">
+              ◎
+            </a>
+          </div>
+        </div>
+        <p class="text-[0.7rem] text-slate-500">
+          © 2025 Operation Lifeblood. All rights reserved.<br />
+          “No soldier or civilian dies from survivable shock.”
+        </p>
+      </div>
     </div>
-    <p>“No soldier or civilian dies from survivable shock.”</p>
   </footer>
 </body>
 </html>
