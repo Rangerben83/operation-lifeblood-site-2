@@ -5,11 +5,11 @@
   <title>Operation Lifeblood – Ending Preventable Deaths from Hemorrhagic Shock</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Google Fonts -->
+  <!-- Google Font: Inter (sans-serif only) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
     rel="stylesheet"
   />
 
@@ -21,7 +21,6 @@
         extend: {
           fontFamily: {
             sans: ["Inter", "system-ui", "sans-serif"],
-            display: ["Space Grotesk", "system-ui", "sans-serif"],
           },
           colors: {
             blood: {
@@ -31,7 +30,7 @@
             },
             sea: {
               light: "#4DA3C7",
-              DEFAULT: "#2B85A0",
+              DEFAULT: "#2B85A0",   // deep sea blue
               dark: "#1F5E73"
             },
             gunmetal: {
@@ -52,6 +51,7 @@
 
   <style>
     .caps-spacing { letter-spacing: 0.18em; }
+    .bw-illustration { filter: grayscale(1) contrast(1.1); }
   </style>
 </head>
 
@@ -68,7 +68,7 @@
         class="h-10 w-auto object-contain"
       />
       <div>
-        <div class="text-xs font-semibold uppercase caps-spacing text-gunmetal-dark font-display">
+        <div class="text-xs font-semibold uppercase caps-spacing text-gunmetal-dark">
           Operation Lifeblood
         </div>
         <div class="text-[0.7rem] text-gunmetal-light">
@@ -77,7 +77,7 @@
       </div>
     </div>
 
-    <nav class="hidden md:flex gap-3 text-[0.7rem] font-semibold uppercase caps-spacing text-gunmetal font-sans">
+    <nav class="hidden md:flex gap-3 text-[0.75rem] font-semibold uppercase caps-spacing text-gunmetal">
       <a href="#mission" class="px-3 py-1 rounded-full hover:bg-fog-dark">Mission</a>
       <a href="#problem" class="px-3 py-1 rounded-full hover:bg-fog-dark">The Problem</a>
       <a href="#how-we-work" class="px-3 py-1 rounded-full hover:bg-fog-dark">How We Work</a>
@@ -97,28 +97,28 @@
 
       <!-- LEFT: MAIN TEXT -->
       <div>
-        <p class="text-xs font-semibold uppercase caps-spacing text-blood-dark font-display">
+        <p class="text-xs font-semibold uppercase caps-spacing text-sea-dark">
           Focused Research Organization
         </p>
 
-        <h1 class="mt-2 text-3xl sm:text-4xl font-extrabold uppercase caps-spacing text-gunmetal-dark font-display">
+        <h1 class="mt-3 text-4xl sm:text-5xl font-extrabold uppercase caps-spacing text-gunmetal-dark leading-tight">
           Ending Preventable Deaths<br />
           From Hemorrhagic Shock
         </h1>
 
-        <p class="mt-4 max-w-lg text-sm text-gunmetal">
+        <p class="mt-5 max-w-xl text-sm md:text-base text-gunmetal">
           Operation Lifeblood brings together military physicians, scientists, first responders,
           trauma surgeons, and engineers to end preventable death from hemorrhagic shock —
           the leading cause of preventable death on the battlefield.
         </p>
 
-        <div class="mt-6 flex flex-wrap gap-3">
+        <div class="mt-7 flex flex-wrap gap-3">
           <a href="#problem"
-             class="px-4 py-2 rounded-full bg-blood text-white text-xs font-semibold uppercase caps-spacing shadow hover:bg-blood-dark">
+             class="px-4 py-2 rounded-full bg-blood text-white text-xs md:text-[0.8rem] font-semibold uppercase caps-spacing shadow hover:bg-blood-dark">
             Understand the Problem
           </a>
           <a href="#core-programs"
-             class="px-4 py-2 rounded-full border border-gunmetal-light text-xs font-semibold uppercase caps-spacing text-gunmetal hover:bg-fog-dark">
+             class="px-4 py-2 rounded-full border border-sea text-xs md:text-[0.8rem] font-semibold uppercase caps-spacing text-sea-dark hover:bg-fog-dark">
             Explore Programs
           </a>
         </div>
@@ -142,15 +142,15 @@
   </section>
 
   <!-- URGENCY -->
-  <section id="problem" class="py-12 bg-white">
+  <section id="problem" class="py-14 bg-white">
     <div class="mx-auto max-w-6xl px-4">
 
-      <p class="text-xs font-semibold uppercase caps-spacing text-blood font-display">
+      <p class="text-xs font-semibold uppercase caps-spacing text-blood">
         The Urgency of Hemorrhagic Shock
       </p>
 
       <div class="mt-4 rounded-xl border-l-4 border-blood bg-fog-light p-5 shadow-sm">
-        <p class="italic text-gunmetal-dark text-base">
+        <p class="italic text-gunmetal-dark text-base md:text-lg">
           “Hemorrhage remains the leading cause of preventable death on the battlefield.”
         </p>
         <p class="mt-1 text-sm font-medium text-blood-dark">
@@ -158,12 +158,12 @@
         </p>
       </div>
 
-      <div class="mt-8 grid md:grid-cols-2 gap-6">
+      <div class="mt-10 grid md:grid-cols-2 gap-6">
         <div class="rounded-2xl border border-fog-dark bg-white shadow-sm p-6">
-          <h2 class="text-sm font-semibold uppercase caps-spacing text-gunmetal-dark font-display">
+          <h2 class="text-lg font-semibold uppercase caps-spacing text-gunmetal-dark">
             What Is Hemorrhagic Shock?
           </h2>
-          <p class="mt-3 text-sm text-gunmetal">
+          <p class="mt-3 text-sm md:text-base text-gunmetal">
             Hemorrhagic shock happens when a person loses so much blood that the heart can’t pump
             enough to keep the brain and vital organs alive. Without rapid intervention—stopping
             the bleeding and restoring circulation—the body shuts down in minutes.
@@ -171,20 +171,20 @@
         </div>
 
         <div class="rounded-2xl border border-fog-dark bg-white shadow-sm p-6">
-          <h2 class="text-sm font-semibold uppercase caps-spacing text-gunmetal-dark font-display">
+          <h2 class="text-lg font-semibold uppercase caps-spacing text-gunmetal-dark">
             Why It Is the Leading Cause of Preventable Battlefield Death
           </h2>
-          <p class="mt-3 text-sm text-gunmetal">
+          <p class="mt-3 text-sm md:text-base text-gunmetal">
             On today’s battlefield, most deaths occur before the casualty reaches a surgeon.
             When blood loss is severe:
           </p>
-          <ul class="mt-3 text-sm space-y-1 text-gunmetal">
+          <ul class="mt-3 text-sm md:text-base space-y-1 text-gunmetal">
             <li>• Bleeding can be internal and invisible</li>
             <li>• Clots break apart during movement or stress</li>
             <li>• Even transfusion may only temporarily stabilize the patient</li>
             <li>• Shock can return suddenly during MEDEVAC or early surgery</li>
           </ul>
-          <p class="mt-3 border-l-4 border-blood px-3 text-sm font-medium text-blood-dark">
+          <p class="mt-3 border-l-4 border-blood px-3 text-sm md:text-base font-medium text-blood-dark">
             Because of these challenges, over 90% of potentially survivable combat deaths are
             caused by uncontrolled hemorrhage.
           </p>
@@ -194,37 +194,43 @@
   </section>
 
   <!-- HISTORY & RESEARCH -->
-  <section class="py-12 bg-fog-light">
+  <section class="py-14 bg-fog-light">
     <div class="mx-auto max-w-6xl px-4 grid md:grid-cols-2 gap-6">
       <div class="rounded-2xl border border-fog-dark bg-white shadow-sm p-6">
-        <p class="text-xs font-semibold uppercase caps-spacing text-blood font-display">
+        <p class="text-xs font-semibold uppercase caps-spacing text-sea-dark">
           A Problem Recognized for Generations
         </p>
-        <p class="mt-3 text-sm text-gunmetal">
+        <h3 class="mt-3 text-lg font-semibold text-gunmetal-dark">
+          150+ Years of Knowing the Problem
+        </h3>
+        <p class="mt-3 text-sm md:text-base text-gunmetal">
           Battlefield surgeons have known for over 150 years—from the Civil War through Iraq
           and Afghanistan—that uncontrolled bleeding kills more Soldiers than any other
           battlefield injury.
         </p>
-        <p class="mt-3 text-sm text-gunmetal">
+        <p class="mt-3 text-sm md:text-base text-gunmetal">
           Despite major advances in tourniquets, blood products, and evacuation, hemorrhagic
           shock remains an unsolved problem.
         </p>
       </div>
 
       <div class="rounded-2xl border border-fog-dark bg-white shadow-sm p-6">
-        <p class="text-xs font-semibold uppercase caps-spacing text-blood font-display">
+        <p class="text-xs font-semibold uppercase caps-spacing text-sea-dark">
           Why Traditional Research Hasn’t Solved It
         </p>
-        <p class="mt-3 text-sm text-gunmetal">
+        <h3 class="mt-3 text-lg font-semibold text-gunmetal-dark">
+          Shock Evolves in Minutes. Most Research Moves in Years.
+        </h3>
+        <p class="mt-3 text-sm md:text-base text-gunmetal">
           Conventional medical research relies on slow, linear clinical trials that:
         </p>
-        <ul class="mt-3 text-sm space-y-2 text-gunmetal">
+        <ul class="mt-3 text-sm md:text-base space-y-2 text-gunmetal">
           <li>• Can’t simulate the chaos of battlefield conditions</li>
           <li>• Cannot ethically expose humans to life-threatening shock</li>
           <li>• Require far more data than trauma patients can safely provide</li>
           <li>• Take years to produce results, while shock evolves in minutes</li>
         </ul>
-        <p class="mt-3 border-l-4 border-blood px-3 text-sm font-medium text-blood-dark">
+        <p class="mt-3 border-l-4 border-blood px-3 text-sm md:text-base font-medium text-blood-dark">
           As a result, modern medicine still lacks a validated, real-time model to predict,
           diagnose, and treat hemorrhagic shock in its earliest—and most critical—moments.
         </p>
@@ -233,28 +239,31 @@
   </section>
 
   <!-- HOW WE WORK / INNOVATION -->
-  <section id="how-we-work" class="py-12 bg-white">
+  <section id="how-we-work" class="py-14 bg-white">
     <div class="mx-auto max-w-6xl px-4">
-      <p class="text-xs font-semibold uppercase caps-spacing text-blood font-display">
+      <p class="text-xs font-semibold uppercase caps-spacing text-blood">
         How Operation Lifeblood Is Changing the Future of Shock Care
       </p>
-      <p class="mt-3 max-w-3xl text-sm text-gunmetal">
-        Operation Lifeblood brings together military physicians, combat veterans,
-        scientists, and engineers to break through the limits of traditional research
-        and deliver lifesaving breakthroughs.
+      <h2 class="mt-3 text-2xl font-semibold text-gunmetal-dark">
+        Three Lines of Innovation. One Simple, Urgent Mission.
+      </h2>
+      <p class="mt-4 max-w-3xl text-sm md:text-base text-gunmetal">
+        Operation Lifeblood brings together military physicians, combat veterans, scientists, and
+        engineers to break through the limits of traditional research and deliver lifesaving
+        breakthroughs.
       </p>
 
       <div class="grid md:grid-cols-3 gap-6 mt-8">
         <div class="rounded-xl border border-fog-dark bg-fog-light shadow-sm p-5">
-          <h3 class="text-xs uppercase caps-spacing font-semibold text-blood-dark font-display">
+          <h3 class="text-xs uppercase caps-spacing font-semibold text-blood-dark">
             1. Cardiac Digital Twin for Hemorrhagic Shock
           </h3>
-          <p class="mt-3 text-sm text-gunmetal">
+          <p class="mt-3 text-sm md:text-base text-gunmetal">
             A first-of-its-kind, high-fidelity computational model of how the heart and
             circulatory system respond to blood loss—built using scientific machine learning,
             DoD trauma data, and advanced simulation.
           </p>
-          <p class="mt-3 text-sm text-gunmetal">
+          <p class="mt-3 text-sm md:text-base text-gunmetal">
             This model will allow medics and clinicians to predict shock before it becomes
             fatal, test treatments safely <em>in silico</em>, and personalize resuscitation
             in real time.
@@ -262,10 +271,10 @@
         </div>
 
         <div class="rounded-xl border border-fog-dark bg-fog-light shadow-sm p-5">
-          <h3 class="text-xs uppercase caps-spacing font-semibold text-blood-dark font-display">
+          <h3 class="text-xs uppercase caps-spacing font-semibold text-blood-dark">
             2. Faster Translation From Battlefield to Hospital
           </h3>
-          <p class="mt-3 text-sm text-gunmetal">
+          <p class="mt-3 text-sm md:text-base text-gunmetal">
             Insights from digital twins are converted into deployable protocols, tools, and
             training for medics, first responders, and trauma surgeons—closing the gap between
             research and real-world lifesaving care.
@@ -273,10 +282,10 @@
         </div>
 
         <div class="rounded-xl border border-fog-dark bg-fog-light shadow-sm p-5">
-          <h3 class="text-xs uppercase caps-spacing font-semibold text-blood-dark font-display">
+          <h3 class="text-xs uppercase caps-spacing font-semibold text-blood-dark">
             3. A New Era of Trauma Innovation
           </h3>
-          <p class="mt-3 text-sm text-gunmetal">
+          <p class="mt-3 text-sm md:text-base text-gunmetal">
             Through competitive grants, partnerships, and open collaboration, Operation Lifeblood
             accelerates promising ideas that would otherwise never reach the warfighter or the
             civilian patient.
@@ -287,70 +296,77 @@
   </section>
 
   <!-- WHO WE SERVE -->
-  <section class="py-12 bg-fog-light">
+  <section class="py-14 bg-fog-light">
     <div class="mx-auto max-w-6xl px-4">
-      <p class="text-xs font-semibold uppercase caps-spacing text-blood font-display">
+      <p class="text-xs font-semibold uppercase caps-spacing text-blood">
         Who We Serve
       </p>
+      <h2 class="mt-3 text-2xl font-semibold text-gunmetal-dark">
+        Military Medicine • First Responders • Trauma Medicine
+      </h2>
 
       <div class="grid md:grid-cols-3 gap-6 mt-8">
         <!-- Military Medicine -->
         <article class="overflow-hidden rounded-2xl border border-fog-dark bg-white shadow-sm">
-          <div class="h-32 bg-fog-dark">
-            <!-- Replace with real image when ready -->
+          <div class="h-40 bg-fog-dark">
+            <!-- Black & white realistic illustration: medevac helicopter on mission -->
             <img
-              src="military-medicine.jpg"
-              alt="Military medicine"
-              class="w-full h-full object-cover"
+              src="military-medicine-medevac-bw.jpg"
+              alt="Black and white realistic illustration of a medevac helicopter evacuating a wounded soldier from the battlefield."
+              class="w-full h-full object-cover bw-illustration"
             />
           </div>
           <div class="p-5">
-            <h3 class="text-xs uppercase caps-spacing text-blood-dark font-semibold font-display">
+            <h3 class="text-sm uppercase caps-spacing text-blood-dark font-semibold">
               Military Medicine
             </h3>
-            <p class="mt-3 text-sm text-gunmetal">
+            <p class="mt-3 text-sm md:text-base text-gunmetal">
               Supporting combat casualty care with tools, models, and protocols that work
-              in austere, high-threat environments.
+              in austere, high-threat environments—from point of injury through evacuation
+              and surgical care.
             </p>
           </div>
         </article>
 
         <!-- First Responders -->
         <article class="overflow-hidden rounded-2xl border border-fog-dark bg-white shadow-sm">
-          <div class="h-32 bg-fog-dark">
+          <div class="h-40 bg-fog-dark">
+            <!-- Black & white realistic illustration: gurney into ambulance at auto accident -->
             <img
-              src="first-responders.jpg"
-              alt="First responders"
-              class="w-full h-full object-cover"
+              src="first-responders-ambulance-bw.jpg"
+              alt="Black and white realistic illustration of first responders loading a gurney into the back of an ambulance at the scene of an auto accident."
+              class="w-full h-full object-cover bw-illustration"
             />
           </div>
           <div class="p-5">
-            <h3 class="text-xs uppercase caps-spacing text-blood-dark font-semibold font-display">
+            <h3 class="text-sm uppercase caps-spacing text-blood-dark font-semibold">
               First Responders
             </h3>
-            <p class="mt-3 text-sm text-gunmetal">
+            <p class="mt-3 text-sm md:text-base text-gunmetal">
               Adapting military-grade shock-care innovations for EMS, fire-rescue, and
-              disaster response teams.
+              disaster response teams so they can recognize and treat shock in minutes,
+              not hours.
             </p>
           </div>
         </article>
 
         <!-- Trauma Medicine -->
         <article class="overflow-hidden rounded-2xl border border-fog-dark bg-white shadow-sm">
-          <div class="h-32 bg-fog-dark">
+          <div class="h-40 bg-fog-dark">
+            <!-- Black & white realistic illustration: shock trauma ER scene -->
             <img
-              src="trauma-medicine.jpg"
-              alt="Trauma medicine"
-              class="w-full h-full object-cover"
+              src="trauma-medicine-er-bw.jpg"
+              alt="Black and white realistic illustration of a busy shock trauma emergency room caring for a critically injured patient."
+              class="w-full h-full object-cover bw-illustration"
             />
           </div>
           <div class="p-5">
-            <h3 class="text-xs uppercase caps-spacing text-blood-dark font-semibold font-display">
+            <h3 class="text-sm uppercase caps-spacing text-blood-dark font-semibold">
               Trauma Medicine
             </h3>
-            <p class="mt-3 text-sm text-gunmetal">
-              Partnering with trauma centers and critical care teams to integrate digital twins
-              and new standards of care at the bedside.
+            <p class="mt-3 text-sm md:text-base text-gunmetal">
+              Partnering with trauma centers and critical care teams to integrate digital
+              twins, data networks, and new standards of care at the bedside.
             </p>
           </div>
         </article>
@@ -359,12 +375,12 @@
   </section>
 
   <!-- MISSION -->
-  <section id="mission" class="py-12 bg-white">
+  <section id="mission" class="py-14 bg-white">
     <div class="max-w-3xl mx-auto px-4 text-center">
-      <p class="text-xs font-semibold uppercase caps-spacing text-blood font-display">
+      <p class="text-xs font-semibold uppercase caps-spacing text-blood">
         Our Mission Is Simple and Urgent
       </p>
-      <p class="mt-4 border-l-4 border-blood px-4 py-4 bg-fog-light text-gunmetal text-sm md:text-base">
+      <p class="mt-4 border-l-4 border-sea px-4 py-4 bg-fog-light text-gunmetal text-sm md:text-base">
         To end preventable deaths from hemorrhagic shock—on the battlefield, in the ambulance,
         and in every trauma center in America.
       </p>
@@ -372,45 +388,48 @@
   </section>
 
   <!-- GET INVOLVED -->
-  <section id="get-involved" class="py-12 bg-fog-light">
+  <section id="get-involved" class="py-14 bg-fog-light">
     <div class="mx-auto max-w-6xl px-4">
-      <p class="text-xs font-semibold uppercase caps-spacing text-blood font-display">
+      <p class="text-xs font-semibold uppercase caps-spacing text-blood">
         Get Involved
       </p>
+      <h2 class="mt-3 text-2xl font-semibold text-gunmetal-dark">
+        Join the Mission to Change the Standard of Shock Care
+      </h2>
 
       <div class="grid md:grid-cols-2 gap-6 mt-8">
         <div class="rounded-2xl border border-fog-dark bg-white shadow-sm p-6">
-          <h3 class="text-xs uppercase caps-spacing text-blood-dark font-semibold font-display">
+          <h3 class="text-sm uppercase caps-spacing text-blood-dark font-semibold">
             Partners &amp; Funders
           </h3>
-          <ul class="mt-3 space-y-1 text-sm text-gunmetal">
+          <ul class="mt-3 space-y-1 text-sm md:text-base text-gunmetal">
             <li>• Defense &amp; health agencies</li>
             <li>• Foundations &amp; philanthropic groups</li>
             <li>• Health systems &amp; trauma networks</li>
             <li>• Medtech &amp; data partners</li>
           </ul>
-          <p class="mt-3 text-sm text-gunmetal-dark">
+          <p class="mt-3 text-sm md:text-base text-gunmetal-dark">
             <strong>Contact:</strong><br />
-            <a href="mailto:info@operationlifeblood.org" class="text-blood hover:text-blood-dark">
+            <a href="mailto:info@operationlifeblood.org" class="text-sea-dark hover:text-sea">
               info@operationlifeblood.org
             </a>
           </p>
         </div>
 
         <div class="rounded-2xl border border-fog-dark bg-white shadow-sm p-6">
-          <h3 class="text-xs uppercase caps-spacing text-blood-dark font-semibold font-display">
+          <h3 class="text-sm uppercase caps-spacing text-blood-dark font-semibold">
             Clinicians, Medics &amp; Researchers
           </h3>
-          <ul class="mt-3 space-y-1 text-sm text-gunmetal">
+          <ul class="mt-3 space-y-1 text-sm md:text-base text-gunmetal">
             <li>• Combat medics, corpsmen &amp; EMS</li>
             <li>• Trauma surgeons &amp; critical care teams</li>
             <li>• Shock, modeling &amp; digital twin researchers</li>
             <li>• Data &amp; informatics teams</li>
           </ul>
-          <p class="mt-3 text-sm text-gunmetal-dark">
+          <p class="mt-3 text-sm md:text-base text-gunmetal-dark">
             <strong>Collaborate:</strong><br />
             <a href="mailto:info@operationlifeblood.org?subject=Collaboration"
-               class="text-blood hover:text-blood-dark">
+               class="text-sea-dark hover:text-sea">
               info@operationlifeblood.org
             </a>
           </p>
@@ -426,7 +445,7 @@
   <div class="mx-auto max-w-6xl px-4 flex flex-col md:flex-row justify-between gap-6">
 
     <div class="max-w-md">
-      <p class="text-xs uppercase caps-spacing text-gunmetal-dark font-semibold font-display">
+      <p class="text-xs uppercase caps-spacing text-gunmetal-dark font-semibold">
         Operation Lifeblood
       </p>
       <p class="mt-2 text-sm text-gunmetal">
@@ -439,7 +458,7 @@
     </div>
 
     <div class="text-xs text-gunmetal-light">
-      <p class="uppercase caps-spacing font-semibold text-gunmetal-dark font-display">
+      <p class="uppercase caps-spacing font-semibold text-gunmetal-dark">
         Follow Us
       </p>
       <div class="mt-2 flex gap-2">
