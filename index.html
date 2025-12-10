@@ -26,29 +26,30 @@
 
   <!-- Custom styles for Ken Burns hero -->
   <style>
-    /* Ken Burns background container */
-    .hero-kenburns {
-      position: absolute;
-      inset: -10%;
-      background-size: 120%;
-      background-repeat: no-repeat;
-      background-position: left center;
-      animation: kenburns-pan 30s ease-out infinite alternate;
-      transform-origin: center center;
-    }
+  /* Ken Burns background container */
+  .hero-kenburns {
+    position: absolute;
+    inset: -10%;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    /* Start a bit wider, showing more of the scene */
+    background-position: 50% 60%;
+    animation: kenburns-pan 40s ease-out infinite alternate;
+    transform-origin: center center;
+  }
 
-    /* Pan slowly from left toward upper-right (helicopter) while zooming */
-    @keyframes kenburns-pan {
-      0% {
-        transform: scale(1.05) translate3d(0, 0, 0);
-        background-position: left center;
-      }
-      100% {
-        transform: scale(1.15) translate3d(-5%, -5%, 0);
-        background-position: 80% 10%;
-      }
+  /* Slowly zoom in and drift toward the helicopter (upper-right) */
+  @keyframes kenburns-pan {
+    0% {
+      transform: scale(1);
+      background-position: 50% 60%;  /* wider view */
     }
-  </style>
+    100% {
+      transform: scale(1.25);
+      background-position: 90% 10%;  /* zoomed toward helicopter */
+    }
+  }
+</style>
 </head>
 
 <body class="bg-white text-grayDark antialiased">
