@@ -23,6 +23,32 @@
       },
     };
   </script>
+
+  <!-- Custom styles for Ken Burns hero -->
+  <style>
+    /* Ken Burns background container */
+    .hero-kenburns {
+      position: absolute;
+      inset: -10%;
+      background-size: 120%;
+      background-repeat: no-repeat;
+      background-position: left center;
+      animation: kenburns-pan 30s ease-out infinite alternate;
+      transform-origin: center center;
+    }
+
+    /* Pan slowly from left toward upper-right (helicopter) while zooming */
+    @keyframes kenburns-pan {
+      0% {
+        transform: scale(1.05) translate3d(0, 0, 0);
+        background-position: left center;
+      }
+      100% {
+        transform: scale(1.15) translate3d(-5%, -5%, 0);
+        background-position: 80% 10%;
+      }
+    }
+  </style>
 </head>
 
 <body class="bg-white text-grayDark antialiased">
@@ -52,69 +78,59 @@
   </div>
 </header>
 
-<!-- HERO SECTION -->
-<section class="bg-white">
-  <div class="max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
-    
-    <!-- LEFT: TEXT -->
-    <div>
-      <p class="text-xs uppercase tracking-[0.25em] text-lifebloodRed mb-4">
-        Focused Research Organization
-      </p>
+<!-- HERO SECTION (NEW) -->
+<section class="relative h-[80vh] md:h-screen overflow-hidden">
+  <!-- Ken Burns background image -->
+  <div
+    class="hero-kenburns"
+    style="background-image: url('./OL_HERO_IMAGE.png');"
+  ></div>
 
-      <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-5 text-navy">
-        Eliminating Preventable Deaths from<br />
-        <span class="text-lifebloodRed">Hemorrhagic Shock</span>
-      </h1>
+  <!-- Dark gradient overlay on left side -->
+  <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/65 to-transparent"></div>
 
-      <p class="text-base md:text-lg text-grayMid mb-6">
-        OPERATION LIFEBLOOD unites Military medicine, first responders, and trauma science 
-        in a time-bound, milestone-driven research organization focused on one mission: 
-        turning hemorrhagic shock from a leading cause of preventable death into a 
-        survivable condition for warfighters and civilians.
-      </p>
+  <!-- Hero content -->
+  <div class="relative z-10 h-full">
+    <div class="max-w-6xl mx-auto px-4 py-16 md:py-24 h-full flex items-center">
+      <div class="max-w-xl">
+        <p class="text-xs md:text-sm uppercase tracking-[0.25em] text-white/80 mb-4">
+          Focused Research Organization
+        </p>
 
-      <div class="flex flex-wrap gap-4">
-        <a
-          href="#involved"
-          class="inline-flex items-center justify-center px-7 py-3 text-sm font-semibold rounded-md bg-lifebloodRed text-white hover:bg-lifebloodRed/90"
-        >
-          Get the Mission Brief
-        </a>
+        <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight mb-5 text-white">
+          Eliminating Preventable Deaths from
+          <br />
+          Hemorrhagic Shock
+        </h1>
 
-        <a
-          href="#programs"
-          class="inline-flex items-center justify-center px-7 py-3 text-sm font-semibold rounded-md border border-grayDark/30 text-grayDark hover:border-lifebloodRed hover:text-lifebloodRed"
-        >
-          Explore Core Programs
-        </a>
-      </div>
+        <p class="text-base md:text-lg text-white/85 mb-6">
+          OPERATION LIFEBLOOD unites military medicine, first responders, and trauma science
+          in a time-bound, milestone-driven research organization focused on one mission:
+          turning hemorrhagic shock from a leading cause of preventable death into a survivable
+          condition for warfighters and civilians.
+        </p>
 
-      <p class="mt-4 text-xs uppercase tracking-[0.2em] text-grayMid">
-        Service to Those Who Serve • Scientific Excellence • Operational Realism
-      </p>
-    </div>
+        <div class="flex flex-wrap gap-4 mb-4">
+          <a
+            href="#involved"
+            class="inline-flex items-center justify-center px-7 py-3 text-sm font-semibold rounded-md bg-lifebloodRed text-white hover:bg-lifebloodRed/90 shadow-lg shadow-black/30"
+          >
+            Get the Mission Brief
+          </a>
 
-    <!-- RIGHT: LOGO / BADGE -->
-    <div class="flex justify-center md:justify-end">
-      <div class="relative">
-        <div class="absolute inset-0 rounded-3xl bg-grayLight blur-xl opacity-70"></div>
-        <div class="relative bg-white rounded-3xl border border-grayLight shadow-lg px-8 py-8 flex flex-col items-center">
-          <img
-            src="./OPERATION_LIFEBLOOD_LOGO_1.png"
-            alt="Operation Lifeblood logo"
-            class="h-40 w-auto md:h-48 mb-4"
-          />
-          <p class="text-xs uppercase tracking-[0.2em] text-grayMid mb-1">
-            Hemorrhagic Shock
-          </p>
-          <p class="text-sm font-semibold text-navy text-center">
-            Military & Civilian Trauma • Battlefield to ICU
-          </p>
+          <a
+            href="#programs"
+            class="inline-flex items-center justify-center px-7 py-3 text-sm font-semibold rounded-md border border-white/70 text-white hover:bg-white/10"
+          >
+            Explore Core Programs
+          </a>
         </div>
+
+        <p class="mt-2 text-[0.65rem] md:text-xs uppercase tracking-[0.22em] text-white/70">
+          Service to Those Who Serve • Scientific Excellence • Operational Realism
+        </p>
       </div>
     </div>
-
   </div>
 </section>
 
