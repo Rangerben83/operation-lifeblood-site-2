@@ -81,10 +81,21 @@
 <!-- HERO SECTION (NEW) -->
 <section class="relative h-[80vh] md:h-screen overflow-hidden">
   <!-- Ken Burns background image -->
-  <div
-    class="hero-kenburns"
-    style="background-image: url('./OL_HERO_IMAGE.png');"
-  ></div>
+  <div class="hero-kenburns">
+  <picture>
+    <!-- Mobile first -->
+    <source 
+      srcset="./hero_mobile_1280.webp" 
+      media="(max-width: 768px)"
+      type="image/webp">
+
+    <!-- Default desktop -->
+    <img 
+      src="./hero_master_3200.webp"
+      alt="Operation Lifeblood Hero Image"
+      class="w-full h-full object-cover">
+  </picture>
+</div>
 
   <!-- Dark gradient overlay on left side -->
   <div class="absolute inset-0 bg-gradient-to-r from-black/85 via-black/65 to-transparent"></div>
