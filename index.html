@@ -25,27 +25,27 @@
   </script>
 
   <!-- Custom styles for Ken Burns hero -->
-  <style>
+ <style>
   /* Ken Burns background container */
   .hero-kenburns {
     position: absolute;
     inset: -10%;
-    background-size: 120%;
+    background-size: 100%;            /* FULL IMAGE visible at start */
     background-repeat: no-repeat;
-    background-position: left center;
-    animation: kenburns-pan 30s ease-out infinite alternate;
+    background-position: center center;
+    animation: kenburns-pan 40s ease-out infinite alternate;
     transform-origin: center center;
   }
 
-  /* Pan slowly from left toward upper-right (helicopter) while zooming */
+  /* Zoom + Pan toward the helicopter (upper-right) */
   @keyframes kenburns-pan {
     0% {
-      transform: scale(1.05) translate3d(0, 0, 0);
-      background-position: left center;
+      transform: scale(1);             /* fully zoomed out */
+      background-position: center center;
     }
     100% {
-      transform: scale(1.15) translate3d(-5%, -5%, 0);
-      background-position: 80% 10%;
+      transform: scale(1.30);          /* zoom in */
+      background-position: 90% 10%;    /* upper-right focal point */
     }
   }
 </style>
